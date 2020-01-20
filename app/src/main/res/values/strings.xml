@@ -15,8 +15,9 @@
     <string name="toptext">Play note once.</string>
     <string name="bottomtext">Play note continuously.</string>
 
-    <string name="pause">Pause</string>
+    <string name="switchscreen">Switch to violin screen</string>
 
+    <string name="pause">Pause</string>
 
 
 </resources>

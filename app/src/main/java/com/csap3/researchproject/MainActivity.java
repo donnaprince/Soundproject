@@ -1,5 +1,6 @@
 package com.csap3.researchproject;
 
+import android.content.Intent;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -24,6 +25,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Declare variables
     MediaPlayer mediaPlayer;
     SoundPool mysound;
     int explodeId1; //assign id for note A
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        //Assign variables to each sound so the java file can identify the sounds to play.
         final MediaPlayer mpa = MediaPlayer.create(this, R.raw.pianoa);
         final MediaPlayer mpb = MediaPlayer.create(this, R.raw.pianob);
         final MediaPlayer mpc = MediaPlayer.create(this, R.raw.pianoc);
@@ -66,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer mpg = MediaPlayer.create(this, R.raw.pianog);
 
 
+
+        //Link each button to a sound to be played when pressed.
         Button playa = (Button) findViewById(R.id.button);
         playa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,8 +135,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Switch screens when this button is pressed.
+        Button switchscreen = (Button) findViewById(R.id.button23);
+        switchscreen.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Violin.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+
     }
 
+
+
+
+    //Reset the sound player for each sound.
     @Override
     protected void onPause() {
         super.onPause();
