@@ -2,4 +2,22 @@
     <string name="app_name">ResearchProject</string>
     <string name="action_settings">Settings</string>
     <string name="play">PLAY</string>
+
+    <string name="notea">A</string>
+    <string name="noteb">B</string>
+    <string name="notec">C</string>
+    <string name="noted">D</string>
+    <string name="notee">E</string>
+    <string name="notef">F</string>
+    <string name="noteg">G</string>
+
+
+    <string name="toptext">Play note once.</string>
+    <string name="bottomtext">Play note continuously.</string>
+
+    <string name="pause">Pause</string>
+
+    <String name="imagedescription">The image of the piano is to show that this page has piano notes, other pages added in the future might cover other instruments.</String>
+
+
 </resources>
