@@ -58,10 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //Wire the button to do things.
-        //1. Get the button.
-        ImageButton btn = (ImageButton) findViewById(R.id.imageButton);
-        //2. Set what happens when the user clicks.
         final MediaPlayer mpa = MediaPlayer.create(this, R.raw.pianoa);
         final MediaPlayer mpb = MediaPlayer.create(this, R.raw.pianob);
         final MediaPlayer mpc = MediaPlayer.create(this, R.raw.pianoc);
@@ -69,12 +65,7 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer mpe = MediaPlayer.create(this, R.raw.pianoe);
         final MediaPlayer mpf = MediaPlayer.create(this, R.raw.pianof);
         final MediaPlayer mpg = MediaPlayer.create(this, R.raw.pianog);
-        //btn.setOnClickListener(new View.OnClickListener() {
-            //public void onClick(View v)
-            //{
-            //    mpa.start();
-            //}
-        //});
+
 
         Button playa = (Button) findViewById(R.id.button);
         playa.setOnClickListener(new View.OnClickListener() {
@@ -141,12 +132,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //btn.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-           // public void onClick(View v) {
-             //   Log.i("MyApp", "This is a log message!");
-            //}
-        //});
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
