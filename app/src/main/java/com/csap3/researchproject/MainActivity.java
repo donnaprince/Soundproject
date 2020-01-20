@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Toolbar toolbar = findViewById(R.id.toolbar);   //DONNA -- COMMENTED THIS OUT AS THIS WAS GIVING ME ERROR
-        //setSupportActionBar(toolbar);    //DONNA -- COMMENTED THIS OUT AS THIS WAS GIVING ME ERROR
+
 
 
         //assign attributes to a variable
@@ -131,19 +130,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        //mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.pianoa);
-        //mediaPlayer.start();
     }
 
     @Override
