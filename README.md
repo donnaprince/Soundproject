@@ -3,7 +3,7 @@
 
 This project was created for the research assignment on Java libraries in Advanced Placement Computer Science Applications Period 3. 
 
-*Authors**
+**Authors**
 Donna Prince and Akamai Wong
 
 **Date Last Updated**
